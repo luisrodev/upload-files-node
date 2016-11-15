@@ -8,16 +8,8 @@ html(lang="en")
     script(type="text/javascript" src="/libs/bootstrap/js/bootstrap.min.js")
   body
     div(class="container")
-      div(class="col-md-12 panel panel-default well" style="margin-top: 100px;")
-        div(class="page-header text-center")
-          h1 Upload File #[small NodeJS]
-        div(class="panel-body")
-          form()
-            div(class="form-group")
-              label(for="inputFileName") File Name
-              input(type="text" class="form-control" id="inputFileName" placeholder="File Name")
-            div(class="form-group")
-              label(for="inputFile") File
-              input(type="file" id="inputFile")
-              p(class="help-block") Select some file to upload
-            button(type="submit" class="btn btn-primary") Submit
+      div(class="col-md-12" style="margin-top: 20px;")
+        h1 Welcome
+        a(href="/newFile") Upload new file
+        br
+        a(href="#") List of files
