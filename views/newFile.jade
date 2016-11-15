@@ -12,7 +12,7 @@ html(lang="en")
         div(class="page-header text-center")
           h1 Upload File #[small NodeJS]
         div(class="panel-body")
-          h1 #{respuesta}
+          h1 #{uploadedFile}
           form(method="post" action="/files" enctype="multipart/form-data")
             div(class="form-group")
               label(for="inputFileName") File Name
