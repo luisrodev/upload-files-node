@@ -1,0 +1,15 @@
+.tab-link:hover, .tab-link>a:hover{
+  color: black;
+  cursor: pointer;
+}
+.tab-link, .tab-link>a{
+  color: #767676;
+}
+
+.tab-link{
+  position: absolute;
+}
+
+.tab-link>a{
+  text-decoration: none;
+}

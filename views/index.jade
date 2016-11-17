@@ -4,6 +4,7 @@ html(lang="en")
     title upload-files-node
     meta(charset="utf-8")
     link(href="/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/main.css" rel="stylesheet")
     script(type="text/javascript" src="/libs/jquery/jquery-3.1.0.min.js")
     script(type="text/javascript" src="/libs/bootstrap/js/bootstrap.min.js")
   body
@@ -13,10 +14,14 @@ html(lang="en")
       div(class="col-md-12")
         div(class="panel panel-default")
           div(class="panel-heading" style="padding-bottom: 30px;")
-            div(class="col-md-3 inline-block") #[span(class="glyphicon glyphicon-home" aria-hidden="true" style="color: #767676;")] #[a(href="/" style="color: #767676;") Home]
-            div(class="col-md-3 inline-block") #[span(class="glyphicon glyphicon-plus" aria-hidden="true" style="color: #767676;")] #[a(href="/newFile" style="color: #767676;") Upload New File]
-            div(class="col-md-3 inline-block")  #[span(class="glyphicon glyphicon-th-list" aria-hidden="true" style="color: #767676;")] #[a(href="/files" style="color: #767676;") List Files]
-            div(class="col-md-3 inline-block") GitHub
+            div(class="col-md-3 inline-block")
+              div(class="tab-link") #[span(class="glyphicon glyphicon-home" aria-hidden="true")] #[a(class="" href="/") Home]
+            div(class="col-md-3 inline-block")
+              div.tab-link  #[span(class="glyphicon glyphicon-plus" aria-hidden="true")] #[a(href="/newFile") Upload New File]
+            div(class="col-md-3 inline-block")
+              div.tab-link  #[span(class="glyphicon glyphicon-th-list" aria-hidden="true")] #[a(href="/files") List Files]
+            div(class="col-md-3 inline-block")
+              div.tab-link #[span(class="glyphicon glyphicon-user" aria-hidden="true")] #[a(href="https://github.com/luirting/upload-files-node" target="_blank") GitHub]
           div(class="panel-body")
             h3() About
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
