@@ -25,13 +25,13 @@ html(lang="en")
                   tr
                     th ID
                     th FileName
-                    th FilePath
+                    th Description
                     th Action
                 tbody
                   for data in result
                     tr
                       td #{data.id}
                       td #{data.fileName}
-                      td #{data.filePath}
+                      td #{data.fileDescription}
                       td
                         a(href="/download/#{data.id}" target="_blank") Download

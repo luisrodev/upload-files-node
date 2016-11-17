@@ -35,6 +35,10 @@ app.get("/download/:id", function(req, res){
   });
 });
 
+app.get("/view/:id", function(req, res){
+
+});
+
 app.post("/files", function(req, res){
   dataManager.loadJson("data/data.json", function(err, json){
 
@@ -42,7 +46,7 @@ app.post("/files", function(req, res){
 
     var formatedPath = req.files.theFile.path.replace("\\", "/")
 
-    json.push({id: _id, fileName: req.body.fileName, filePath: formatedPath});
+    json.push({id: _id, fileName: req.body.fileName, fileDescription: req.body.description, filePath: formatedPath});
 
     dataManager.writeJson("data/data.json", json, function(err){
       if(err){
