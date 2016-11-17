@@ -13,3 +13,7 @@
 .tab-link>a{
   text-decoration: none;
 }
+
+.tab-tab{
+  padding-left: 100px;
+}

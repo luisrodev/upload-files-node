@@ -1,0 +1,13 @@
+{
+  "name": "Upload-Files-Node",
+  "description": "Simple Example of a 'system' for upload and download these files using NodeJS.",
+  "main": "app.js",
+  "keywords": [],
+  "author": "Luis A. Rubio Olivarria",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luirting/upload-files-node.git",
+  },
+  "homepage" : "https://github.com/luirting/upload-files-node"
+}
