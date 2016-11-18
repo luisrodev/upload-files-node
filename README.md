@@ -51,11 +51,6 @@ upload-files-node/
 │   │   │   └── jquery-3.1.0.min.js
 ├── data/
 │   └── data.json
-├── node_modules/
-│   ├── body-parser/
-│   ├── express/
-│   ├── jade/
-│   └── multer/
 ├── uploads/
 ├── views/
 │   ├── index.jade
@@ -69,16 +64,26 @@ upload-files-node/
 
 How to use?
 --------------------------------------
-Just find the file 'app.js' on console and execute this command:
+First open your console and install the dependencies:
+```bash
+npm install
+```
+
+Now, find the file 'app.js' on console and execute this command:
 ```bash
 node app.js
-```
+```  
 
 The Node server run on port 8080, you can change the port if you want, just change this line of code in 'app.js' file:
 ```bash
 app.listen(8080);
 ```
-The most probably this line of code stay on the end of the file.
+The most probably this line of code stay on the end of the file.  
+
+Now you can open your favorite browser and type this url:
+```bash
+localhost:8080
+```
 
 Files will save on uploads folder
 ```
